@@ -1,4 +1,6 @@
 Depot::Application.routes.draw do
+  get "store/index"
+
   resources :products
 
   # The priority is based upon order of creation:
@@ -48,9 +50,7 @@ Depot::Application.routes.draw do
   #     resources :products
   #   end
 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root to: 'store#index', as: 'store'
 
   # See how all your routes lay out with "rake routes"
 
