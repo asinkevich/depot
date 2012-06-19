@@ -20,6 +20,6 @@ class OrderNotifier < ActionMailer::Base
   def shipped(order)
     @order = order
 
-    mail to: order.mail, subject: "Order from shop has been shipped"
+    mail to: order.email, subject: "Order from shop has been shipped"
   end
 end
