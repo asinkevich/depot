@@ -37,3 +37,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'will_paginate', '~> 3.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
